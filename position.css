@@ -1,0 +1,166 @@
+/*#parent{
+    position: relative;
+    height:100px;
+    width:100px;
+    background-color: brown;
+    margin:30px;
+}*/
+
+/*#child{
+    position: absolute;
+    height:100px;
+    width:100px;
+    background-color: rgb(101, 203, 18);
+    margin:50px;}*/
+
+    
+#face{
+    position: relative;
+    height:150px;
+    width:150px;
+    background-color: yellow;
+    margin:30px;
+    border-radius: 50%;
+    margin-top: 250px;
+    margin-left: 650px;
+    border: 7px solid black;
+}
+
+#eyes #eye1{
+    position: absolute;
+    height:20px;
+    width:20px;
+    background-color: black;
+    border-radius: 50%;
+    margin-top: 35px;
+    margin-left: 35px;
+    animation: blink 5s infinite;
+}
+
+#iris1{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 35px;
+    margin-left: 40px;
+    animation: blink2 5s infinite;
+
+}
+
+#eyes #eye2{
+    position: absolute;
+    height:20px;
+    width:20px;
+    background-color: black;
+    border-radius: 50%;
+    margin-top: 35px;
+    margin-left: 95px;
+    animation: blink 5s infinite;
+}
+
+#iris2{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 35px;
+    margin-left: 100px;
+    animation: blink2 5s infinite;
+ }
+/*
+@keyframes moveIris1 {
+    0%, 100% {
+        transform: translate(0, 0); 
+    }
+    25% {
+        transform: translate(5px, 0); 
+    }
+    50% {
+        transform: translate(5px, 5px); 
+    }
+    75% {
+        transform: translate(0, 5px); 
+    }
+}
+
+
+@keyframes moveIris2 {
+    0%, 100% {
+        transform: translate(0, 0); 
+    }
+    25% {
+        transform: translate(5px, 0); 
+    }
+    50% {
+        transform: translate(5px, 5px); 
+    }
+    75% {
+        transform: translate(0, 5px); 
+    }
+} */
+
+
+#mouth{
+    position: absolute;
+    height:100px;
+    width:90px;
+    background-color: transparent;
+    margin-top:15px;
+    margin-left: 25px;
+    border-radius: 50%;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 25px solid black;
+    animation: mouthMove 5s infinite ease-in-out;
+}
+
+@keyframes mouthMove {
+    0%, 90%, 100%{
+        transform: scaleY(1); 
+    }
+    50% {
+        transform: scaleY(0.5);
+    }
+}
+
+@keyframes blink {
+    0%, 90%, 100%{
+      height: 20px;
+    }
+    95%  {
+      height: 0px;
+    }
+  }
+
+  @keyframes blink2 {
+    0%, 90%, 100%{
+        height: 10px;
+      }
+      95%  {
+        height: 0px;
+      }
+  }
+
+body audio{
+    padding: 50px;
+}
+
+body{
+    background-image:url('colorful.avif');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    text-align: center;
+}
+#face audio{
+    text-align: center;
+    padding:200px;
+}
+body{
+    text-align: center;  
+}
+
+
